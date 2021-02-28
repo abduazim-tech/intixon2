@@ -1,0 +1,150 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	text-decoration: none;
+	list-style-type: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #F2F2F2;
+	font-family: sans-serif;
+}
+.container{
+	width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.header-section{
+	margin-top: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.header-center{
+	display: flex;
+	justify-content: center;	
+}
+.header-center li:active {
+	color: black;
+}
+.header-center>li ::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color:#33D35E ;
+	transform: translateY(20px);
+	border-radius: 2px;
+	transition: width 0.5s ease;
+}
+
+.header-center>li:hover ::after {
+	width: 100%;
+}
+.header-center:hover li {
+	box-shadow: 10 10 10 black;
+}
+.header-center li {
+	margin-right: 30px;
+	color: #9597A5;
+}
+.header-left{
+	color: white;
+	width: 140px;
+	padding: 11px 15px;
+	background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px
+}
+.header-left:hover {
+	background: linear-gradient(-135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
+.hero-phones-desktop{
+	background-color: #FAFAFA;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.section1{
+	width: 447px;
+	height: 385px;
+	margin:0 100px;
+}
+h1{
+	margin-right: 50px;
+	margin-top: 100px;
+	color: #2D314D;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+}
+p{
+	color: #9597A5;
+}
+
+.saction2{
+	color: #9597A5;
+	display: flex;
+	align-items: center;
+}
+ li{
+ 	
+ 	padding-bottom: 15px;
+	padding-right: : 30px;
+}
+
+.articles{
+	margin-top: 10px;
+	color: #9597A5; 
+	background-color: #FAFAFA; 
+}
+.section3{
+	display: flex;
+	align-items: center;
+}
+
+.footer{
+	position: relative;
+	background-color: #2D314D;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 200px;
+}
+
+.section4{
+	color: white;
+
+}
+.section5{
+	position: absolute;
+	left: 70px;
+	top:  80px;
+	display: flex;
+
+}
+.section5 li {
+	margin-right: 20px;
+}
+.section4 li:active {
+	color: #33D35E;
+}
+a{
+	color: inherit;
+}
+@media only screen and (max-width: 500px) {
+	.hero-phones-desktop {
+		display: block;
+	}
+	.saction2 {
+		display: block;
+	}
+	.section3{
+		display: block;
+	}
